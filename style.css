@@ -1,0 +1,93 @@
+:root {
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, Arial, sans-serif;
+  background: #f2ebe3;
+  color: var(--Dark-grayish-blue);
+}
+
+h1,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: 10% auto;
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.imagem {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px 0 0 10px;
+}
+
+.container-conteudo {
+  display: grid;
+  justify-self: start;
+  padding: 40px 50px;
+  gap: 20px;
+}
+
+.perfume {
+  font-size: 14px;
+  letter-spacing: 1ch;
+}
+
+.nome-produto {
+  font-size: 45px;
+  font-family: "Fraunces", Arial, sans-serif;
+  color: var(--Very-dark-blue);
+  line-height: 1.5ch;
+}
+
+.descricao-produto {
+  font-size: 17px;
+  line-height: 2.5ch;
+}
+
+.precos {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.precos .preco-1 {
+  font-size: 45px;
+  font-family: "Fraunces", Arial, sans-serif;
+  color: var(--Dark-cyan);
+}
+
+.precos .preco-2 {
+  text-decoration: line-through;
+}
+
+.carrinho {
+  margin-top: 10px;
+  padding: 15px 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--Dark-cyan);
+  text-decoration: none;
+  color: var(--White);
+  border-radius: 7px;
+}
+
+.carrinho:hover {
+  background: #193f31;
+}
